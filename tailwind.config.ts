@@ -8,11 +8,20 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      keyframes: {
+        flip: {
+          '0%, 100%': { transform: 'rotateX(0deg)' },
+          '50%': { transform: 'rotateX(1800deg)' }
+        }
       },
-    },
+      animation: {
+        'flip': 'flip 1s ease-in-out'
+      },
+      perspective: {
+        '1000': '1000px'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 } satisfies Config;
+
