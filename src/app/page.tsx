@@ -19,12 +19,11 @@ export default function Home() {
       setResult(flip)
       setIsFlipping(false)
     }, 1000)
-
   }
 
   const getCoinImage = () => {
-    if (!result) return '/images/head.svg'
-    return result === 'HEADS' ? '/images/head.svg' : '/images/tail.svg'
+    if (!result) return '/images/heads.svg'
+    return result === 'HEADS' ? '/images/heads.svg' : '/images/tail.svg'
   }
 
   return (
