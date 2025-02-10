@@ -22,7 +22,7 @@ export default function Home() {
   }
 
   const getCoinImage = () => {
-    if (!result) return '/images/heads.svg'
+    if (!result) return '/images/tail.svg'
     return result === 'HEADS' ? '/images/heads.svg' : '/images/tail.svg'
   }
 
